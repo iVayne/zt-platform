@@ -38,7 +38,7 @@ public class SSLClient {
         SimpleDateFormat sf = new SimpleDateFormat("yyyyMMdd");
         String operationDate = sf.format(new Date());
         String message = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><in><head><version>1.0.1</version><InstID>"+InstID+"</InstID><trmSeqNum>2450510253</trmSeqNum><tranDate>"+operationDate+"</tranDate><tranTime>141550</tranTime><tradeCode>9000</tradeCode><servName>Ser1</servName><reserve1></reserve1><reserve2></reserve2><reserve3></reserve3></head><body><operationDate>" + operationDate + "</operationDate><field1></field1></body></in>";
-        String resultStr= HttpsClient.sengMessage(message);
+        String resultStr= HttpsClient.sengMessage(message);///银行返回数据
         System.out.println(HttpsClient.sengMessage(message));
     }
 
